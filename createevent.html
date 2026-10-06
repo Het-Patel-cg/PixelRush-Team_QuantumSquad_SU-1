@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Create an Event</title>
+</head>
+<body>
+    <!-- TOP DECORATIVE BORDER -->
+  <div class="top-dashed-border"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <div class="brand-logo">
+        <span>&#10022;</span>
+        <span>CampusHub</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Explore</a>
+        <a href="#" class="nav-item">Calendar</a>
+        <a href="#" class="nav-item">My Events</a>
+      </nav>
+
+      <div class="nav-search">
+        <span>&#128269;</span>
+        <input type="text" placeholder="Search events, clubs, campus...">
+      </div>
+
+      <div class="nav-actions">
+        <button class="notification-bell">&#128276;</button>
+        <button class="btn-create-event">+ Create Event</button>
+        <div class="profile-avatar">&#128100;</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-row">
+      <a href="#">Home</a> / <a href="#">Manage Events</a> / <span>Create Event</span>
+    </div>
+
+    <!-- Title and Verified Box -->
+    <div class="title-banner">
+      <div class="title-left">
+        <div class="title-headline-group">
+          <h1 class="page-title">Create an Event</h1>
+          <span class="step-pill">STEP 1 OF 3: DRAFT</span>
+        </div>
+        <p class="page-subtitle">Share your event with the campus community and help students discover something they'll love. Fill in the key details below to instantly publish.</p>
+      </div>
+
+      <div class="verified-organizer-box">
+        <span class="verified-icon">&#128737;</span>
+        <div>
+          <strong>Verified Organizer Pass</strong><br>
+          ACM Student Chapter B.E. Cell
+        </div>
+      </div>
+    </div>
+
+    <!-- 2-COLUMN LAYOUT -->
+    <div class="layout-grid">
+
+      <!-- LEFT COLUMN: FORM SECTIONS -->
+      <div class="form-column">
+
+        <!-- Section 1: Event Basic Information -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#128196;</span> Event Basic Information</h2>
+            <span class="required-note">* Required fields</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Event Name *</label>
+            <input type="text" class="text-input" value="AI & Web3 Innovation Hackathon 2026">
+          </div>
+
+          <div class="form-group two-cols">
+            <div>
+              <label class="form-label">Event Category *</label>
+              <select class="select-input">
+                <option>Technology & Hackathons</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Audience Scope</label>
+              <select class="select-input">
+                <option>Open to All University Campuses</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-between">
+              <label>Short Tagline</label>
+              <span class="char-limit">Max 120 chars</span>
+            </div>
+            <input type="text" class="text-input" value="36 hours of relentless building, prototyping, and decentralized intelligence.">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Full Event Description</label>
+            <textarea class="textarea-input" rows="4">Join over 250+ collegiate engineers, designers, and visionaries! Industry mentorship roster provided by top venture firms and open-source foundations. Food, refreshments, and hack-kits 24/7 provided free at registration.</textarea>
+          </div>
+        </section>
+
+        <!-- Section 2: Event Poster & Visual Cover -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#128dbc;</span> Event Poster & Visual Cover</h2>
+          </div>
+
+          <div class="upload-container">
+            <div class="upload-dropzone">
+              <div class="upload-icon">&#128229;</div>
+              <div class="upload-title">Upload Event Poster</div>
+              <div class="upload-sub">PNG, JPG, or WEBP is Recommended (1200 x 630px max 5MB)</div>
+              <button class="btn-choose-file">Browse Local File</button>
+            </div>
+
+            <div class="uploaded-preview-item">
+              <span style="font-size: 11px; color: #64748b;">Selected Poster Preview:</span>
+              <div class="preview-thumb-img"></div>
+              <div class="thumb-filename">
+                <span>poster_hackathon_final.png</span>
+                <span class="remove-file">Replace</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Schedule & Timing -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#128197;</span> Schedule & Timing</h2>
+          </div>
+
+          <div class="form-group three-cols">
+            <div>
+              <label class="form-label">Event Date *</label>
+              <input type="text" class="text-input" value="10/24/2026">
+            </div>
+            <div>
+              <label class="form-label">Start Time *</label>
+              <input type="text" class="text-input" value="09:00AM">
+            </div>
+            <div>
+              <label class="form-label">End Time *</label>
+              <input type="text" class="text-input" value="09:00PM">
+            </div>
+          </div>
+
+          <label class="checkbox-item">
+            <input type="checkbox">
+            <span>This event spans multi-day campus festival</span>
+          </label>
+        </section>
+
+        <!-- Section 4: Venue & Campus Location -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#128205;</span> Venue & Campus Location</h2>
+          </div>
+
+          <div class="toggle-buttons-group">
+            <button class="toggle-btn active">&#127979; Offline Campus</button>
+            <button class="toggle-btn">&#128187; Virtual / Zoom</button>
+          </div>
+
+          <div class="form-group two-cols">
+            <div>
+              <label class="form-label">Venue Name *</label>
+              <input type="text" class="text-input" value="TechHub Auditorium, Hall B">
+            </div>
+            <div>
+              <label class="form-label">Building / Level</label>
+              <input type="text" class="text-input" value="Block 4, Level 02">
+            </div>
+          </div>
+
+          <div class="venue-map-container">
+            <div class="map-image-mock"></div>
+            <div class="map-pin-pill">
+              <span>&#128205; TechHub Auditorium &bull; Stanford Campus Room</span>
+              <span style="color: #059669; font-weight: 600;">&#10003; GPS Located</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5: Tickets & Seating Capacity -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#127915;</span> Tickets & Seating Capacity</h2>
+          </div>
+
+          <div class="form-group three-cols">
+            <div>
+              <label class="form-label">Ticket Admission</label>
+              <div style="display: flex; gap: 8px; margin-top: 4px;">
+                <label style="font-size: 12px; display: flex; align-items: center; gap: 4px;">
+                  <input type="radio" name="admission" checked> Free Entry
+                </label>
+                <label style="font-size: 12px; display: flex; align-items: center; gap: 4px;">
+                  <input type="radio" name="admission"> Paid Pass
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="form-label">Price (USD / ₹)</label>
+              <input type="text" class="text-input" value="0">
+            </div>
+            <div>
+              <label class="form-label">Maximum Capacity</label>
+              <input type="text" class="text-input" value="250">
+            </div>
+          </div>
+
+          <div class="free-notice-strip">
+            <span>&#9888; Zero Allocation: 250 Seats Reserved for University Registered Attendees</span>
+            <span class="free-badge-green">100% Free</span>
+          </div>
+        </section>
+
+        <!-- Section 6: Featured Mentors & Speakers -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#127891;</span> Featured Mentors & Speakers</h2>
+            <a href="#" style="color: #5d45f9; font-size: 11px; font-weight: 600;">+ Add Speaker</a>
+          </div>
+
+          <div class="speaker-row-item">
+            <div class="speaker-info">
+              <div class="speaker-avatar"></div>
+              <div>
+                <div class="speaker-name-title">
+                  Dr. Jane Doe <span class="speaker-tag-keynote">Keynote</span>
+                </div>
+                <div class="speaker-bio">Founder @ Campus Robotics & Neural Computing Lab</div>
+              </div>
+            </div>
+            <div class="speaker-actions">
+              <span>&#9998;</span>
+              <span>&#128465;</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 7: Host & Club Details -->
+        <section class="form-section">
+          <div class="section-header-row">
+            <h2 class="section-heading"><span class="section-icon">&#128101;</span> Host & Club Details</h2>
+          </div>
+
+          <div class="form-group two-cols">
+            <div>
+              <label class="form-label">Club / Organizer Name</label>
+              <input type="text" class="text-input" value="ACM Student Chapter B.E. Cell">
+            </div>
+            <div>
+              <label class="form-label">Official Inquiries Email</label>
+              <input type="text" class="text-input" value="hackathon@campus.university">
+            </div>
+          </div>
+
+          <label class="checkbox-item">
+            <input type="checkbox" checked>
+            <span>Use my CampusHub Club Officer verification credentials on this ad</span>
+          </label>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN: EVENT LIVE PREVIEW -->
+      <aside class="preview-column">
+
+        <div class="preview-header-row">
+          <span>Event Live Preview</span>
+          <span class="preview-subtext">Real-time student card view</span>
+        </div>
+
+        <!-- Student Preview Card -->
+        <div class="preview-card">
+          <div class="preview-thumb">
+            <div class="preview-thumb-chips">
+              <span class="pill-blue">Technology</span>
+              <span class="pill-glass">Campus Flagship</span>
+            </div>
+            <div class="preview-thumb-footer">
+              <span>&#128197; Sat, Oct 24, 2026</span>
+              <span>&#9201; 09:00 AM - 09:00 PM</span>
+            </div>
+          </div>
+
+          <div class="preview-card-body">
+            <h3 class="preview-card-title">AI & Web3 Innovation Hackathon 2026</h3>
+            <p class="preview-card-tagline">36 hours of relentless building, prototyping, and decentralized intelligence on campus.</p>
+
+            <div class="preview-location-line">
+              &#128205; TechHub Auditorium, Hall B
+            </div>
+
+            <div class="preview-progress-box">
+              <div class="progress-labels">
+                <span>Available Seats</span>
+                <span style="color: #059669;">195 of 250 Left</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="preview-host-row">
+              <span>&#128101; ACM Student Chapter B.E.</span>
+              <span class="free-highlight">Free Entry</span>
+            </div>
+
+            <button class="btn-quick-register">Quick Register with HubID &#8599;</button>
+          </div>
+        </div>
+
+        <!-- Publish Action Box -->
+        <div class="publish-action-box">
+          <div class="publish-status-row">
+            <span>Ready to announce?</span>
+            <span class="save-timestamp">&#10003; Autosaved 1 min ago</span>
+          </div>
+          <div class="publish-buttons-row">
+            <button class="btn-cancel">Cancel</button>
+            <button class="btn-save-draft">Save Draft</button>
+            <button class="btn-publish-now">Publish</button>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- BOTTOM DECORATIVE BORDER -->
+  <div class="bottom-dashed-border"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span>&#10022;</span>
+          <span>CampusHub</span>
+        </div>
+        <p>The pulse of campus life. Discover opportunities, connect with peers, and never miss a campus moment.</p>
+      </div>
+      <div class="footer-menu">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer-social-icons">
+        <span>&#127760;</span>
+        <span>&#128247;</span>
+        <span>&#128279;</span>
+        <span>&#128038;</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 CampusHub. All rights reserved.</div>
+      <div>Empowering student communities nationwide.</div>
+    </div>
+  </footer>
+<link rel="stylesheet" href="style6.css">
+</body>
+</html>
